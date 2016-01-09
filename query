@@ -1,0 +1,10 @@
+create table tetris(
+  nickName varchar2(30),
+  score Number(38),
+  regDate Date
+);
+
+select * from tetris;
+
+insert into tetris values('kimminjeong',100,sysdate);
+commit;
