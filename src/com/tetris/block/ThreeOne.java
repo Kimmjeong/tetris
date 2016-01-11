@@ -34,6 +34,7 @@ public class ThreeOne extends TetrisView {
 		blockInfo[3][2] = new Block(1,1);
 		blockInfo[3][3] = new Block(1,2);
 
+		System.out.println("ThreeOne");
 		setDefaultRandom();	//랜덤셋팅
 		setBlock(con);			//컨테이너에 등록
 	}

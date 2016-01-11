@@ -5,6 +5,7 @@ import java.awt.Container;
 import com.tetris.controll.Block;
 import com.tetris.controll.TetrisView;
 
+@SuppressWarnings("serial")
 public class LeftTwo extends TetrisView {
 
 	public LeftTwo(Container con){
@@ -22,6 +23,7 @@ public class LeftTwo extends TetrisView {
 		blockInfo[1][2] = new Block(0,1);
 		blockInfo[1][3] = new Block(-1,1);
 
+		System.out.println("LeftTwo");
 		setDefaultRandom();	//랜덤셋팅
 		setBlock(con);			//컨테이너에 등록
 	}

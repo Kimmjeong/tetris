@@ -22,6 +22,7 @@ public class Line extends TetrisView {
 		blockInfo[1][2] = new Block(1,0);
 		blockInfo[1][3] = new Block(2,0);
 
+		System.out.println("Line");
 		this.setDefaultRandom();	//랜덤셋팅
 		this.setBlock(con);			//컨테이너에 등록
 	}

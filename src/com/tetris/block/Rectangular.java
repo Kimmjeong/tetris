@@ -17,6 +17,7 @@ public class Rectangular extends TetrisView {
 		blockInfo[0][2] = new Block(1,0);
 		blockInfo[0][3] = new Block(1,1);
 		
+		System.out.println("Rectangular");
 		setDefaultRandom(); // 랜덤세팅
 		setBlock(con); // 컨테이너에 등록
 	}

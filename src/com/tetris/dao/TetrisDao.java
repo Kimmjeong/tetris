@@ -83,12 +83,17 @@ public class TetrisDao {
 		try {
 			conn=getConnection();
 			String sql="insert into tetris values(?,?,sysdate)";
+			
+			System.out.println(sql);
+			System.out.println(nickName);
+			System.out.println(score);
+			
 			pstmt=conn.prepareStatement(sql);
 			
-			pstmt.setString(0, nickName);
-			pstmt.setLong(1, score);
+			pstmt.setString(1, nickName);
+			pstmt.setLong(2, score);
 			
-			pstmt.executeQuery();
+			pstmt.executeUpdate();
 			
 		} catch (SQLException e) {
 			System.out.println("에러 - "+e);

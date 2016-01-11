@@ -21,6 +21,7 @@ public class RightTwo extends TetrisView {
 		blockInfo[1][2] = new Block(1,0);
 		blockInfo[1][3] = new Block(1,-1);
 
+		System.out.println("RightTwo");
 		setDefaultRandom();	//랜덤셋팅
 		setBlock(con);			//컨테이너에 등록
 	}
